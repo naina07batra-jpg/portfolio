@@ -17,25 +17,26 @@
 <body>
     <!-- NAVBAR-->
      <nav>
-        <div class="left">
-            <a href="/">Naina Batra</a>
-        </div>
-        <div class="right">
-            <a href="http://github.com" target="_blank" rel="noopener noreferrer"></a>
+    <div class="left">
+        <a href="/">Naina Batra</a>
+    </div>
+    <div class="right">
+        <a href="http://github.com" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-github"></i>
-            <span>Github</span></a>
+            <span>Github</span>
+        </a>
 
-            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin"></i>
-            <span>Linkedin</span></a>
+            <span>Linkedin</span>
+        </a>
 
-            <a href="mailto:naina@example.com">
+        <a href="mailto:naina@example.com">
             <i class="fa-solid fa-envelope"></i>
-            <span>Email</span></a>
-        
-        </div>
-
-     </nav>
+            <span>Email</span>
+        </a>
+    </div>
+</nav>
 
      <main>
         <!-- SECTION 1: Hero-->
@@ -68,39 +69,54 @@
 </section>
 
          <!--SECTION 2: Skills-->
-         <section id="skills">
-            <h2>Skills</h2>
-            <div class="text">
-                I know the following tools
-            </div>
+         <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="text">
+        I know the following tools
+    </div>
 
-            <div class="cells">
-                <div class="cell">
-                  <img src="image/Figma-logo.svg.png" alt="figma">
-                  <span>Illustrator</span>
-                </div>
+    <div class="cells">
+        <div class="cell">
+            <img src="image/Figma-logo.svg.png" alt="Figma">
+            <span>Figma</span>
+        </div>
 
-                <div class="cells">
-                <div class="cell">
-                  <img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator">
-                  <span>Illustrator</span>
-                </div>
+        <div class="cell">
+            <img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator">
+            <span>Illustrator</span>
+        </div>
 
-                <div class="cells">
-                <div class="cell">
-                  <img src="image/photoshop.png" alt="Photoshop">
-                  <span>Photoshop</span>
-                </div>
-
-            </div>
-
-         </section>
+        <div class="cell">
+            <img src="image/photoshop.png" alt="Photoshop">
+            <span>Photoshop</span>
+        </div>
+    </div>
+</section>
 
          <!-- SECTION 3: Projects-->
          <section id="Projects"></section>
 
-         <!-- SECTION 1: Contact-->
-         <section id="Contact"></section>
+         <!-- SECTION 4: Contact-->
+         <section id="Contact" class="Contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Contact through:
+                </div>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email=" id="email">
+                    <textarea id="message"></textarea>
+
+                    <button type="submit">Send message</button>
+                    
+                  </form>
+            </div>
+         </section>
      </main>
     
 </body>
