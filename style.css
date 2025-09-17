@@ -63,6 +63,7 @@ nav .right a span {
     align-items: center;
     padding:0 50px;
     margin: 50px 0;
+    margin-bottom:20px;
     gap: 40px;
 }
 
@@ -95,6 +96,17 @@ nav .right a span {
 
 }
 
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img{
+    width:350px;
+    border-radius: 50%;
+}
+
 
 .hero-section .text {
     flex: 2;
@@ -102,6 +114,21 @@ nav .right a span {
     flex-direction: column; /* stack content vertically */
     gap: 10px; /* add spacing between h2s and links */
 }
+
+@media (max-width: 740px){
+    /* SECTION 1: Hero */
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img{
+        width: 300px;
+    }
+    }
+
+}
+
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -133,6 +160,15 @@ nav .right a span {
         display: none; /* Hide the arrow on small screens */
     }
 
+    /* SECTION 1: Hero */
+    .hero-section{
+        padding:0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
     /* HERO SECTION - mobile responsive */
     .hero-section {
         flex-direction: column;
@@ -155,4 +191,4 @@ nav .right a span {
         height: auto;
         border-radius: 50%;
     }
-}
+
